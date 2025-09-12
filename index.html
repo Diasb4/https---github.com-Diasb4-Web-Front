@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <table style="width:100%; height:100%;">
+        <tr>
+            <!-- Левая колонка: меню -->
+            <td style="width:25%; vertical-align:top; background:#f0f0f0;">
+                <h2>Меню</h2>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#hobbies">Хобби</a></li>
+                    <li><a href="#websites">Любимые сайты</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#mood">Настроение</a></li>
+                    <li><a href="#contact">Контакт</a></li>
+                </ul>
+            </td>
+            <!-- Правая колонка: основной контент -->
+            <td style="width:75%; vertical-align:top;">
+                <!-- ...весь ваш существующий контент из <body>... -->
+                <h1 id="about">My First Web Page</h1>
+                <button onclick="alert('Hello, welcome to my web page!')">Click Me!</button>
+                <h1>About Me</h1>
+                <h3>Hello! My name is Dias Tursynbai.</h3>
+                <h3> I'm a Software Engineer course student</h3>
+                <p>I'm passionate about coding and love to create web applications.</p>
+                <h2 id="hobbies">My Hobbies</h2>
+                <ol>
+                    <li>Reading</li>
+                    <li>Riding bicycle</li>
+                    <li>Watching anime</li>
+                </ol>
+                <h2 id="websites">My Favorite Websites</h2>
+                <ul>
+                    <li><a href="https://www.habr.com" target="_blank">Habr</a></li>
+                    <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    <li><a href="https://www.wikipedia.com" target="_blank">Wikipedia</a></li>
+                    <li><a href="https://www.reddit.com" target="_blank">Reddit</a></li>
+                </ul>
+                <img src="data:image/jpeg;base64,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"
+                    alt="My Photo" width="200">
+                <p>This is a photo of me.</p>
+                <h2 id="schedule">Расписание</h2>
+                <table>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                    </tr>
+                    <tr>
+                        <td>Software Design Pattern</td>
+                        <td>Monday</td>
+                        <td>14:00-15:50</td>
+                    </tr>
+                    <tr>
+                        <td>Web Technologies</td>
+                        <td>Wednesday</td>
+                        <td>14:00-14:50</td>
+                    </tr>
+                </table>
+                <h3 id="mood">My Mood</h3>
+                <p>I'm feeling focused and ready to learn! &#128512;</p>
+                <p>I'm feeling a bit tired but motivated to push through. &#128522;</p>
+                <p>I'm excited about the projects we will be working on! &#128640;</p>
+                <form id="contact" action="https://www.example.com/submit" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="color">Favorite Color:</label><br>
+                    <input type="color" id="color" name="favorite_color"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+
+            </td>
+        </tr>
+    </table>
+</body>
+
+
+</html>
