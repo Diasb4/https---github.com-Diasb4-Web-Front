@@ -1,0 +1,35 @@
+.levitating-panel {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+
+    /* Эффект глубины */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+    /* Небольшое "парение" */
+    transform: translateY(0);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Анимация "левитации" */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Дополнительный эффект при наведении */
+.levitating-panel:hover {
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}

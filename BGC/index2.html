@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Games Club</title>
+    <link rel="icon" type="image/png" href="BGC\favicon.ico">
+    <style>
+        body {
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1,
+        h2 {
+            max-width: 800px;
+            text-align: center;
+            word-break: break-all;
+        }
+
+        p {
+            font-size: 18px;
+            word-break: normal;
+        }
+
+        .levitating-panel {
+            margin-top: 30px;
+            width: 300px;
+            padding: 20px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+
+            /* Эффект глубины */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
+            /* Анимация "парения" */
+            animation: float 3s ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Эффект при наведении */
+        .levitating-panel:hover {
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Что такое AITU Board Games Club?</h1>
+    <h2>
+        Board Games Club – это клуб Astana IT University,
+        где многие находят единомышленников в своей любви к настольным играм таким как Catan, Dixit, Carcassonne и
+        многим другим.
+        Мы собираемся каждую неделю, чтобы играть, общаться и весело проводить время вместе
+    </h2>
+
+    <div class="levitating-panel">
+        <h2>Присоединяйся к нам!</h2>
+        <p>Мы играем в различные настольные игры и всегда рады новым участникам.</p>
+    </div>
+</body>
+
+</html>
